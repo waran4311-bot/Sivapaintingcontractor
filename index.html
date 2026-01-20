@@ -4,82 +4,135 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Shiva Painting Contractor</title>
+    <title>Siva Painting Contractor</title>
     <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
 
     <!-- Header -->
-    <header>
-        <div class="logo">Shiva Painting Contractor</div>
+    <header class="header">
+        <div class="logo">🎨 Shiva Painting</div>
         <nav>
             <a href="#home">Home</a>
-            <a href="#about">About</a>
             <a href="#services">Services</a>
+            <a href="#pricing">Pricing</a>
             <a href="#gallery">Gallery</a>
             <a href="#contact">Contact</a>
+            <nav>
+                <a href="index.html">Home</a>
+                <a href="about.html">About</a>
+                <a href="services.html">Services</a>
+                <a href="contact.html">Contact</a>
+            </nav>
         </nav>
+        <button id="modeBtn">🌙</button>
+        [6:54 pm, 20/01/2026] smahesh1300:
+        <script src="script.js"></script>
+        [6:54 pm, 20/01/2026] smahesh1300: <img src="images/work1.jpg" onclick="openImg(this.src)">
+        [6:54 pm, 20/01/2026] smahesh1300: <div id="imgBox" onclick="this.style.display='none'">
+            <img id="bigImg">
+        </div>
+        [6:55 pm, 20/01/2026] smahesh1300: <form onsubmit="return validate()">
+            <input id="name" placeholder="Name">
+            <input id="email" placeholder="Email">
+            <textarea id="msg"></textarea>
+            <button>Send</button>
+        </form>
+        [6:55 pm, 20/01/2026] smahesh1300: <iframe src="https://www.google.com/maps?q=Tamil Nadu&output=embed"
+            width="100%" height="300" style="border:0;">
+        </iframe>
+        [6:55 pm, 20/01/2026] smahesh1300:
+        <meta name="description" content="Best Painting Contractor in Tamil Nadu">
+        <meta name="keywords" content="painting contractor, interior painting, exterior painting">
+        <meta name="author" content="Siva Painting Contractor">
+
     </header>
 
-    <!-- Hero Section -->
-    <section id="home" class="hero">
-        <h1>Professional Painting Services</h1>
-        <p>Interior • Exterior • Commercial • Wall Designs</p>
-        <a href="tel:9941657398" class="btn">Call Now</a>
+    <!-- Hero -->
+    <section class="hero" id="home">
+        <div class="hero-content">
+            <h1>Professional Painting Services</h1>
+            <p>Interior • Exterior • Commercial • Waterproofing</p>
+            <a href="tel:9876543210" class="btn">📞 Call Now</a>
+        </div>
     </section>
 
-    <!-- About -->
-    <section id="about" class="section">
-        <h2>About Us</h2>
-        <p>
-            We are professional painting contractors with years of experience.
-            We provide quality interior, exterior, residential and commercial painting
-            services at affordable prices.
-        </p>
-    </section>
 
     <!-- Services -->
-    <section id="services" class="section gray">
+    <section class="section" id="services">
         <h2>Our Services</h2>
-        <div class="services">
-            <div class="card">Interior Painting</div>
-            <div class="card">Exterior Painting</div>
-            <div class="card">Wall Putty</div>
-            <div class="card">Texture & Design Painting</div>
-            <div class="card">Commercial Painting</div>
-            <div class="card">Waterproof Coating</div>
+        <div class="service-box">
+            <div class="card">🏠 Interior Painting</div>
+            <div class="card">🏢 Exterior Painting</div>
+            <div class="card">🎨 Texture Design</div>
+            <div class="card">🧱 Wall Putty</div>
+            <div class="card">💧 Waterproof Coating</div>
+            <div class="card">🏬 Commercial Painting</div>
+        </div>
+    </section>
+
+    <!-- Pricing -->
+    <section class="section gray" id="pricing">
+        <h2>Pricing</h2>
+        <div class="pricing">
+            <div class="price-card">
+                <h3>Basic</h3>
+                <p>₹xxxx / sq.ft</p>
+            </div>
+            <div class="price-card highlight">
+                <h3>Premium</h3>
+                <p>₹xxxx / sq.ft</p>
+            </div>
+            <div class="price-card">
+                <h3>Luxury</h3>
+                <p>₹xxxx / sq.ft</p>
+            </div>
         </div>
     </section>
 
     <!-- Gallery -->
-    <section id="gallery" class="section">
+    <section class="section" id="gallery">
         <h2>Our Work</h2>
         <div class="gallery">
-            <img src="interior painting.jpeg" alt="Painting Work">
-            <img src="exterior painting.jpeg" alt="Painting Work">
-            <img src="wall putty.jpeg" alt="Painting Work">
+            <img src="interior painting.jpeg">
+            <img src="exterior painting.jpeg">
+            <img src="wall putty.jpeg">
+        </div>
+    </section>
+
+    <!-- Testimonials -->
+    <section class="section gray">
+        <h2>Happy Clients</h2>
+        <div class="testimonials">
+            <div class="review">⭐⭐⭐⭐⭐ Excellent Work!</div>
+            <div class="review">⭐⭐⭐⭐ Professional Service</div>
+            <div class="review">⭐⭐⭐⭐⭐ Affordable & Quality</div>
         </div>
     </section>
 
     <!-- Contact -->
-    <section id="contact" class="section gray">
+    <section class="section" id="contact">
         <h2>Contact Us</h2>
-        <p>📞 Phone: <a href="tel:9941657398">9941657398</a></p>
-        <p>📍 Location: Tamil Nadu, India</p>
+        <p>📞 9941657398</p>
+        <p>📍 Tamil Nadu, India</p>
 
         <form>
-            <input type="text" placeholder="Your Name" required>
-            <input type="email" placeholder="Your Email" required>
-            <textarea placeholder="Your Message"></textarea>
-            <button type="submit">Send Message</button>
+            <input type="text" placeholder="Name" required>
+            <input type="email" placeholder="Email" required>
+            <textarea placeholder="Message"></textarea>
+            <button>Send</button>
         </form>
     </section>
 
     <!-- Footer -->
     <footer>
-        <p>© 2026 Shiva Painting Contractor. All Rights Reserved.</p>
+        <p>© 2026 Siva Painting Contractor</p>
     </footer>
+
+    <!-- Floating Buttons -->
+    <a href="tel:9941657398" class="call-float">📞</a>
+    <a href="https://wa.me/919941657398" class="whatsapp-float">💬</a>
 
 </body>
 
